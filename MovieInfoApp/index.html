@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieInfoApp</title>
+
+    <script src="https://kit.fontawesome.com/c08608055a.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <app-bar></app-bar>
+
+    </header>
+
+    <main>
+
+        <div class="search-container">
+
+            <div class="search-element">
+
+                <i class="fa fa-search"></i>
+
+                <input type="text" class="search-input" placeholder="Search Movie Title..." id="search-input"
+                    onkeyup="findMovies()" onclick="findMovies()">
+
+                <div class="search-list" id="search-list">
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="result-container">
+
+                <div class="result-list" id="result-list">
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <a href="https://github.com/Bitalova" target="_blank"> <i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/claudia-solang-2b055a223/" target="_blank"> <i
+                class="fa fa-linkedin-square"></i></a>
+        <p>&copy; 2020 Claudia Solang</p>
+
+    </footer>
+
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+
+    <script src="./src/script/view/main.js"></script>
+    <script src="app.js" type="module"></script>
+
+</body>
+
+</html>
